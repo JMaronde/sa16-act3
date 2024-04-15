@@ -1,0 +1,45 @@
+{% extends 'portfolio_site/base.html' %}
+{% load static %}
+
+{% block title %}About - Portfolio Website{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css_files/gallery.css' %}">
+<main>
+    <h3>This is the Gallery page!</h3>
+    <p>Welcome to my Gallery! Check out some of the work I've done in GitHub!</p>
+    <p>Click on the images to go to the GitHub repo they're in!</p>
+    
+    <div class="container">
+        <div class="work_samples">
+            <p>This first example is a collection of some practice problems I did using regex (regular expressions). 
+                Regex is used to match and/or grab certain parts of a file. In this case, it was used to grab correctly 
+                formatted URLs and to parse invoices</p>
+            <a href="https://github.com/z0faas/sa11-act3">
+                <img src="{% static 'images/regex_practice.png' %}">
+            </a>
+        </div><br>
+
+        <div class="work_samples">
+            <p>This next example is a collection of some practice problems I did using Ruby's HTTParty. The purpose of HTTParty
+                is to grab data from an API, convert that data into a JSON file, then parse that file for whatever information
+                you need.
+            </p>
+            <a href="https://github.com/z0faas/sa12-act3">
+                <img src="{% static 'images/http_practice.png' %}">
+            </a>
+        </div><br>
+
+        <div class="work_samples">
+            <p>This final example is a collection of some practice problems I did on Object Oriented Programming (OOP) in Ruby. Learning
+                OOP in an easy-to-read programming language like Ruby is crucial to more easily understand larger projects and break them
+                down into smaller classes / parts. 
+            </p>
+            <a href="https://github.com/z0faas/sa8-act2">
+                <img src="{% static 'images/ruby_OOP_practice.png' %}">
+            </a>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
