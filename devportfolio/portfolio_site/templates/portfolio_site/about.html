@@ -1,0 +1,49 @@
+{% extends 'portfolio_site/base.html' %}
+{% load static %}
+
+{% block title %}About - Portfolio Website{% endblock %}
+
+{% block content %}
+<main>
+    <h3>This is the About page!</h3>
+    
+    <div id="background">
+        <h2>Background!</h2>
+        <ul>
+            <li>My name is Jonathan Maronde and I am 20 years old.</li>
+            <li>I've lived in Memphis Tennessee my entire life.</li>
+            <li>I went to Kate Bond Elementary and Middle School</li>
+            <li>I went to Cordova High School and graduated in 2022</li>
+            <li>I started going to University of Memphis in Fall 2022</li>
+        </ul>
+        
+        <div id="background-imgs">
+            <img src="{% static 'KateBondMS.png' %}">
+            <img src="{% static 'CordovaHS.png' %}">
+            <img src="{% static 'uofm.png' %}">
+        </div>
+    </div>
+
+    <div id="skills_achievements">
+        <h2>Skills and Achievements!</h2>
+        <ul>
+            <li>I'm currently a sophomore Computer Science Major with a 3.9 GPA</li>
+            <li>I've learned 5 programming languages while I've been enrolled here.</li>
+            <ol>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+            <li>I plan on pursuing a concentration in Cybersecurity and becoming a Network Engineer</li>
+        </ul>
+
+        <div id="skills_achievements-imgs">
+            <img src="{% static 'library.webp' %}">
+            <img src="{% static 'cybersecurity.webp' %}">
+            <img src="{% static 'coding.webp' %}">
+        </div>
+    </div>
+</main>
+{% endblock %}
