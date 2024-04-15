@@ -9,3 +9,6 @@ def about(request):
 
 def gallery(request):
     return render(request, 'portfolio_site/gallery.html')
+
+def contact(request):
+    return render(request, 'portfolio_site/contact.html')
