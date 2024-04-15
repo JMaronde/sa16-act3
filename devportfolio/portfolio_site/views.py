@@ -6,3 +6,6 @@ def home(request):
 
 def about(request):
     return render(request, 'portfolio_site/about.html')
+
+def gallery(request):
+    return render(request, 'portfolio_site/gallery.html')
