@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
-    </head>
-    <body>
-        <h1>Welcome to the Home Page</h1>
-    </body>
-</html>
+{% extends 'portfolio_site/base.html' %}
+{% load static %}
+
+{% block title %}Home - Portfolio Website{% endblock %}
+
+{% block content %}
+<main>
+    <h3>This is the Home page!</h3>
+    <p>Welcome to my portfolio!</p>
+
+    <p>Here's some of my coding expertise!</p>
+    <ul>
+      <li>Python (DS's, Algorithms, and OOP)</li>
+      <li>Ruby (OOP)</li>
+      <li>Simple HTML, CSS, & JS</li>
+    </ul>
+    <img src="{% static 'home_image.webp' %}">
+</main>
+{% endblock %}
