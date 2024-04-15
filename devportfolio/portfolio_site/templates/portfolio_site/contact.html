@@ -1,0 +1,39 @@
+{% extends 'portfolio_site/base.html' %}
+{% load static %}
+
+{% block title %}About - Portfolio Website{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css_files/contact.css' %}">
+<main>
+    <h3>This is the Contact page!</h3>
+    <p>How would you like for me to contact you?</p><br>
+
+    <form>
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+        </div><br>
+
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div><br>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="SPants@gmail.com" required>
+        </div><br>
+
+        <div>
+            <label for="phone">Phone #</label>
+            <input type="tel" id="phone" name="phone" placeholder="901-123-4567" required>
+        </div><br>
+
+        <div id="buttons">
+            <input type="reset">
+            <input type="submit">
+        </div>
+    </form>
+</main>
+{% endblock %}
