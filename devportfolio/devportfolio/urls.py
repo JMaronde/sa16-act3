@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
     path("", RedirectView.as_view(url="home/", permanent=True)),
-]
+    path('about/', views.about)
+]  
